@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <script language="javascript">
+            function Verificar(){
+                if(document.formulario.aceitar.checked==false)
+                alert("Você deve acertar os termos do contrato!");
+                else 
+                alert("Concluido!");
+            }            
+        </script>
+    </head>
+<body>
+    <form name="formulario">
+        Termos do contrato.... <br>
+        <input type="checkbox" name="aceitar" value="sim">Aceito o contrato<br>
+        <input type="button" value="Proseguir" onclick="Verificar();">
+    </form>
+</body>
+</html>
