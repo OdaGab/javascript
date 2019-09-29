@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script language="javascript">
+        function propriedades(){
+            var indice = document.form.avaliar.selectedIndex;
+            var texto = "Indice  da opção escolhida: " + indice;
+            texto += "\nNúmero de opções do select: "  + document.form.avaliar.length;
+            texto += "\nValor da opção escolhida: "    + document.form.avaliar.options[indice].value;
+            texto += "\nTexto da opção escolhida: "    + document.form.avaliar.options[indice].text;
+            alert(texto);
+        }
+    
+    </script>
+</head>
+<body>
+    <form name="form">
+        <select name="avaliar">
+            <option value="10">Bom  </option>
+            <option value="20">Médio </option>
+            <option value="30">Ruim  </option>
+        </select>
+        <input type="button" value="OK" onclick="propriedades();">
+    </form>
+</body>
+</html>
